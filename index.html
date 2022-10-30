@@ -6,8 +6,24 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-    <link rel="stylesheet" href="/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/css/style.css">
     <title>Intern Center</title>
+    <style type="text/tailwindcss">
+        .nav-scrolled {
+            @apply bg-white/60 backdrop-blur-lg border-b border-gray-200 z-20
+        }
+        .intern-card::after {
+            content: '';
+            @apply block absolute w-full h-full bg-gray-600 top-2 left-0 rounded-lg
+        }
+        .intern-card:hover {
+            @apply scale-105
+        }
+        .intern-card:hover::after {
+            @apply top-0
+        }
+    </style>
 </head>
 
 <body class="bg-neutral-100">
@@ -159,7 +175,7 @@
     <!-- Footer End -->
 
     <!-- Script -->
-    <script src="/observers.js"></script>
+    <script src="/js/observers.js"></script>
 </body>
 
 </html>

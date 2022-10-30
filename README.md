@@ -1,1 +1,0 @@
-# interns-ozorajkt.github.io
